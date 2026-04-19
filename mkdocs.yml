@@ -1,0 +1,34 @@
+site_name: AI Notes
+site_description: Notes about models, agent engineering, and Claude Code
+site_url: https://ai.tech-notes.brofu.org
+docs_dir: docs
+site_dir: site
+use_directory_urls: false
+
+theme:
+  name: mkdocs
+  custom_dir: overrides
+
+nav:
+  - Home: index.md
+  - Models:
+      - Overview: 01-models/readme.md
+      - Model Landscape: 01-models/01-model_landscape.md
+      - Reasoning vs Speed: 01-models/02-reasoning_vs_speed.md
+  - Agent Engineering:
+      - Overview: 02-agent_engineering/readme.md
+      - Agent Loop: 02-agent_engineering/01-agent_loop.md
+      - Tooling Patterns: 02-agent_engineering/02-tooling_patterns.md
+  - Claude Code:
+      - Overview: 03-claude_code/readme.md
+      - Workflow Notes: 03-claude_code/01-workflow_notes.md
+      - Usage Patterns: 03-claude_code/02-usage_patterns.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  disqus_shortname: brofu-tech

@@ -1,6 +1,9 @@
 .DS_Store
 .*.swp
 _book
+site
 node_modules
 package-lock.json
 run_server.sh
+.venv
+.venv-mkdocs
