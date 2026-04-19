@@ -36,6 +36,11 @@ jobs:
           gitbook build
           cp SUMMARY.md _book
 
+      - name: Switch to Node.js for Wrangler
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
